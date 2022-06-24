@@ -1,0 +1,179 @@
+html, body {
+    font-size: 22px;
+    font-family: Helvetica;
+    color:seashell;
+    opacity: 0.9;
+    margin:0;
+    background-color: black;
+    text-decoration: none;
+}
+.wrapper {
+    text-align: center;
+    overflow:auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+.header {
+    background-color: black;
+    text-decoration: underline;
+    border-bottom: 1px solid seashell;
+    align-items:center;
+}
+.logo {
+    max-height: 50px;
+    padding-left: 10px;
+}
+.content {
+    margin:auto;
+}
+
+.mission {
+    background-image: url(/imgs/img-mission-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission_box {
+    background-color: black;
+}
+.locations {
+    background-image: url(/imgs/img-locations-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.location_block{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.location_block ul{
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    display: block;
+    justify-content: center;
+}
+.contact {
+    height: 200px;
+    text-align:center;
+}
+.copy {
+    text-align: left;
+    padding-left:20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 10px 10px;
+    }
+    .nav{
+        display:grid;
+        padding:10px;
+    }
+    .nav a {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    .mission {
+        height: 300px;
+        width: auto;
+    }
+
+    .featured img {
+        max-width: 250px;
+        max-height: 150px;
+    }
+    .locations {
+        background-image: none;
+    }
+    .location_blocks {
+        background-image: url(/imgs/img-locations-background.png);
+
+    }
+    .location_block{
+        width: 250px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content {
+        width: 1200px;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        position:fixed;
+        justify-content: space-between;
+        height: 69px;
+    }
+    .nav {
+        display:flex;
+    }
+    .nav_link {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .mission {
+        height:700px;
+    }
+    .mission_box{
+        width: 100%;
+    }
+    .featured {
+        max-width:1000px;
+        margin:auto;
+    }
+    .featured_imgs {
+        display:inline-flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .featured img {
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .featured_imgs div {
+        padding-right: 30px;
+    }
+    .featured_imgs img {
+        padding-bottom: 10px;
+    }
+    .featured_imgs h4 {
+        margin-top:0;
+    }
+    .locations {
+        height: 700px;
+        width: auto;
+    }
+    .location_block{
+        width: 300px;
+    }
+    .location_box {
+        padding-top: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
